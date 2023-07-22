@@ -1,25 +1,26 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 # uarizona
 
-<a href="https://Gchism94.github.io/uarizona/"><img src="man/figures/logo.png" data-align="right" height="113" /></a>
+<a href="https://Gchism94.github.io/uarizona/"><img src="man/figures/logo.png" data-align="right" height="113"/></a>
 
 <!-- badges: start -->
 
 <a
 href="https://github.com/Gchism94/uarizona/actions/workflows/R-CMD-check.yaml"
-class="pkgdown-devel"><img
-src="https://github.com/Gchism94/uarizona/actions/workflows/R-CMD-check.yaml/badge.svg"
-alt="R-CMD-check" /></a>
+class="pkgdown-devel"><img src="https://github.com/Gchism94/uarizona/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"/></a>
 <a href="https://cran.r-project.org/package=uarizona"
-class="pkgdown-release"><img
-src="https://www.r-pkg.org/badges/version/uarizona"
-alt="CRAN Status" /></a>
+class="pkgdown-release"><img src="https://www.r-pkg.org/badges/version/uarizona" alt="CRAN Status"/></a>
 
 <!-- badges: end -->
 
 ## Overview
 
-**uarizona** allows users to generate visualizations with UArizona’s
+**uarizona** allows users to generate visualizations with UArizona's
 official suite of colors in a color blind friendly way. By using it
 alongside **ggplot2**, you can easily promote accessibility in the
 UArizona community and beyond.
@@ -83,7 +84,7 @@ plot1 +
   scale_uarizona_color_discrete()
 ```
 
-<img src="man/figures/README-themeuarizona-1.png" width="100%" />
+<img src="man/figures/README-themeuarizona-1.png" width="100%"/>
 
 ``` r
 
@@ -92,7 +93,7 @@ plot2 +
   scale_uarizona_continuous()
 ```
 
-<img src="man/figures/README-themeuarizona-2.png" width="100%" />
+<img src="man/figures/README-themeuarizona-2.png" width="100%"/>
 
 ## Questions
 
