@@ -1,6 +1,6 @@
 #' Discrete scale constructor for color argument.
 #'
-#' Applies a Duke branded and accessible discrete color palette to ggplot
+#' Applies a UArizona branded and accessible discrete color palette to ggplot
 #' geometric objects using color argument. It prioritizes high contrast colors
 #' aligned with Web Content Accessibility Guidelines (WCAG).
 #'
@@ -22,20 +22,20 @@
 #' ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm, color = species)) +
 #'   geom_point()
 #'
-#' # vs. with Duke scale
+#' # vs. with UArizona scale
 #' ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm, color = species)) +
 #'   geom_point() +
-#'   scale_duke_color_discrete()
+#'   scale_uarizona_color_discrete()
 #'
-#' # vs. with shape and Duke scale
+#' # vs. with shape and UArizona scale
 #' ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm, shape = species, color = species)) +
 #'   geom_point() +
-#'   scale_duke_color_discrete()
+#'   scale_uarizona_color_discrete()
 #'
-#' # vs. with Duke scale, UK spelling
+#' # vs. with UArizona scale, UK spelling
 #' ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm, colour = species)) +
 #'   geom_point() +
-#'   scale_duke_colour_discrete()
+#'   scale_uarizona_colour_discrete()
 #'
 #' # Make some species NAs to demonstrate na.value usage
 #' penguins_with_NAs <- penguins |>
@@ -44,24 +44,24 @@
 #' # with default na.value
 #' ggplot(penguins_with_NAs, aes(x = body_mass_g, color = species)) +
 #'   geom_density() +
-#'   scale_duke_color_discrete()
+#'   scale_uarizona_color_discrete()
 #'
 #' # with custom na.value
 #' ggplot(penguins_with_NAs, aes(x = body_mass_g, color = species)) +
 #'   geom_density() +
-#'   scale_duke_color_discrete(na.value = "pink")
-scale_duke_color_discrete <- function(..., na.value = "#B5B5B5") {
+#'   scale_uarizona_color_discrete(na.value = "pink")
+scale_uarizona_color_discrete <- function(..., na.value = "#B5B5B5") {
 
   ggplot2::discrete_scale(
     aesthetics = "color",
-    "duke_d_color",
-    duke_pal(),
+    "uarizona_d_color",
+    uarizona_pal(),
     na.value = na.value,
     ...
   )
 
 }
 
-#' @rdname scale_duke_color_discrete
+#' @rdname scale_uarizona_color_discrete
 #' @export
-scale_duke_colour_discrete <- scale_duke_color_discrete
+scale_uarizona_colour_discrete <- scale_uarizona_color_discrete

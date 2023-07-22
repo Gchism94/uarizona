@@ -1,6 +1,6 @@
 #' Continuous scale constructor.
 #'
-#' Applies a Duke branded and accessible continuous color scale to ggplot
+#' Applies a UArizona branded and accessible continuous color scale to ggplot
 #' geometric objects. It is applicable for both fill and color arguments.
 #' Defines gradient scale from dark to light to improve visibility and contrast
 #' for readers.
@@ -13,7 +13,7 @@
 #' @param guide Type of legend. "colorbar" for continuous scale, "legend" for discrete scale.
 #' @param aesthetics String or vector of strings detailing what aesthetic features this continuous scale can apply to.
 #'
-#' @return a visualization with continuous duke color scale
+#' @return a visualization with continuous uarizona color scale
 #' @export
 #'
 #' @examples
@@ -24,14 +24,15 @@
 #' ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm, color = body_mass_g)) +
 #'   geom_point()
 #'
-#' # vs. with Duke scale
+#' # vs. with uarizona scale
 #' ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm, color = body_mass_g)) +
 #'   geom_point() +
-#'   scale_duke_continuous()
-scale_duke_continuous <- function(..., low = "#00539B", high = "#E2E6ED", space = "Lab",
-                                  na.value = "#666666", guide = "colourbar", aesthetics = c("colour", "color", "fill")) {
+#'   scale_uarizona_continuous()
+scale_uarizona_continuous <- function(..., low = "#1D3E6D", high = "#D5D9D9", space = "Lab",
+         na.value = "#636B6F", guide = "colourbar", aesthetics = c("colour", "color", "fill"))
+ {
   ggplot2::continuous_scale(
-    aesthetics, "duke_c",
+    aesthetics, "uarizona_c",
     scales::seq_gradient_pal(low, high, space),
     na.value = na.value,
     guide = guide, ...

@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/reference/test_package.html#special-files
 
 library(testthat)
-library(duke)
+library(uarizona)
 
-test_check("duke")
+test_check("uarizona")

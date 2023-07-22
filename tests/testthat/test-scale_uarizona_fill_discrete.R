@@ -3,9 +3,9 @@ test_that("factors assume appropriate fill for 3-category variable", {
   p <- ggplot2::ggplot(df,
               ggplot2::aes(x, fill = x)) +
     ggplot2::geom_bar() +
-    scale_duke_fill_discrete()
+    scale_uarizona_fill_discrete()
 
-  correct_fill <- c("#012169", "#C84E00", "#00539B")
+  correct_fill <- c("#AB0520", "#0C234B", "#1D3E6D")
   expect_equal(ggplot2::layer_data(p)$fill, correct_fill)
 })
 
@@ -15,10 +15,11 @@ test_that("factors assume appropriate fill for 8-category variable", {
   p2 <- ggplot2::ggplot(df,
               ggplot2::aes(x, fill = x)) +
     ggplot2::geom_bar() +
-    scale_duke_fill_discrete()
+    scale_uarizona_fill_discrete()
 
-  correct_fill <- c("#012169", "#C84E00", "#00539B", "#339898", "#A1B70D",
-                             "#E89923", "#FFD960", "#262626")
+  correct_fill <- c("#AB0520", "#0C234B", "#1D3E6D", "#81D3EB", "#70B865",
+                    "#A95C42", "#F4EDE5", "#262F40")
+
   expect_equal(ggplot2::layer_data(p2)$fill, correct_fill)
 })
 
@@ -29,7 +30,7 @@ test_that("appropriate fill for factors over 8-levels", {
   p3 <- ggplot2::ggplot(df,
                         ggplot2::aes(x, fill = x)) +
     ggplot2::geom_bar() +
-    scale_duke_fill_discrete()
+    scale_uarizona_fill_discrete()
 
   correct_fill <- "#B5B5B5"
   expect_equal(ggplot2::layer_data(p3)$fill[9], "#B5B5B5")
@@ -42,7 +43,7 @@ test_that("appropriate fill for factors over 8-levels", {
   p4 <- ggplot2::ggplot(df,
                         ggplot2::aes(x, fill = x)) +
     ggplot2::geom_bar() +
-    scale_duke_fill_discrete()
+    scale_uarizona_fill_discrete()
 
   expect_warning(ggplot2::ggplot_build(p4),
                  "This manual palette can handle a maximum of 8 values. You have supplied 9.")

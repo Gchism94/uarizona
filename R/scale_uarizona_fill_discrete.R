@@ -1,6 +1,6 @@
 #' Discrete scale constructor for fill argument.
 #'
-#' Applies a Duke branded and accessible discrete color palette to ggplot
+#' Applies a UArizona branded and accessible discrete color palette to ggplot
 #' geometric objects using fill argument. It prioritizes high contrast colors
 #' aligned with Web Content Accessibility Guidelines (WCAG).
 #'
@@ -19,10 +19,10 @@
 #' ggplot(penguins, aes(x = species, fill = species)) +
 #'   geom_bar()
 #'
-#' # vs. with Duke scale
+#' # vs. with UArizona scale
 #' ggplot(penguins, aes(x = species, fill = species)) +
 #'   geom_bar() +
-#'   scale_duke_fill_discrete()
+#'   scale_uarizona_fill_discrete()
 #'
 #' # Make some species NAs to demonstrate na.value usage
 #' penguins_with_NAs <- penguins |>
@@ -31,18 +31,18 @@
 #' # with default na.value
 #' ggplot(penguins_with_NAs, aes(x = species, fill = species)) +
 #'   geom_bar() +
-#'   scale_duke_fill_discrete()
+#'   scale_uarizona_fill_discrete()
 #'
 #' # with custom na.value
 #' ggplot(penguins_with_NAs, aes(x = species, fill = species)) +
 #'   geom_bar() +
-#'   scale_duke_fill_discrete(na.value = "pink")
-scale_duke_fill_discrete <- function(..., na.value = "#B5B5B5") {
+#'   scale_uarizona_fill_discrete(na.value = "pink")
+scale_uarizona_fill_discrete <- function(..., na.value = "#B5B5B5") {
 
   ggplot2::discrete_scale(
     aesthetics = "fill",
-    "duke_d_fill",
-    duke_pal(),
+    "uarizona_d_fill",
+    uarizona_pal(),
     na.value = na.value,
     ...
   )

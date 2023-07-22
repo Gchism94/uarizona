@@ -1,8 +1,8 @@
 ---
-title: "scale_duke_continuous()"
+title: "scale_uarizona_continuous()"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{scale_duke_continuous()}
+  %\VignetteIndexEntry{scale_uarizona_continuous()}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-This vignette is intended to demonstrate the breadth of `scale_duke_continuous()` and its
+This vignette is intended to demonstrate the breadth of `scale_uarizona_continuous()` and its
 various applications. 
 It is fully integrated with ggplot2 visualizations.
 
@@ -25,7 +25,7 @@ It is fully integrated with ggplot2 visualizations.
 For these visualizations, we will use the `penguins` dataset from the **palmerpenguins** package.
 
 ```{r setup, warning = FALSE}
-library(duke)
+library(uarizona)
 library(palmerpenguins)
 library(ggplot2)
 ```
@@ -38,5 +38,5 @@ plot <- ggplot2::ggplot(palmerpenguins::penguins, ggplot2::aes(bill_length_mm, f
   ggplot2::labs(title = "Bill Length vs. Flipper Length", caption = "There are three different species of penguins.", x = "Bill Length (mm)", y = "Flipper Length (mm)")
 
 plot +
-  scale_duke_continuous()
+  scale_uarizona_continuous()
 ```

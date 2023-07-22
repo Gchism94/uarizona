@@ -9,7 +9,7 @@
 #' @param base_line_size the baseline size
 #' @param base_rect_size the base rect
 #'
-#' @return a plot with Duke colors
+#' @return a plot with UArizona colors
 #' @export
 #' @importFrom ggplot2 '%+replace%'
 #' @importFrom ggplot2 'margin'
@@ -32,25 +32,25 @@
 #'   )
 #' p
 #'
-#' # vs. with Duke theme
+#' # vs. with UArizona theme
 #' p +
-#'   theme_duke()
+#'   theme_uarizona()
 #'
-#' # vs. with Duke theme and scale
+#' # vs. with UArizona theme and scale
 #' p +
-#'   scale_duke_color_discrete() +
-#'   theme_duke()
+#'   scale_uarizona_color_discrete() +
+#'   theme_uarizona()
 #'
-#' # with Duke theme, scale, and further customization to theme
+#' # with UArizona theme, scale, and further customization to theme
 #' p +
-#'   scale_duke_color_discrete() +
-#'   theme_duke() +
+#'   scale_uarizona_color_discrete() +
+#'   theme_uarizona() +
 #'   theme(
 #'     plot.title = element_text(color = "red", size = 20),
 #'     plot.background = element_rect(fill = "pink", color = "yellow"),
 #'     panel.grid = element_blank()
 #'   )
-theme_duke <- function(
+theme_uarizona <- function(
     base_size = 11,
     base_family = "",
     base_line_size = base_size / 22,
@@ -77,37 +77,37 @@ theme_duke <- function(
         hjust = 0, vjust = 1,
         margin = ggplot2::margin(b = half_line),
         family = base_family, face = "bold",
-        colour = "#00539B"
+        colour = "#1D3E6D" # replaced #00539B
       ),
 
       # subtitle text
       plot.subtitle = ggplot2::element_text(
         hjust = 0, vjust = 1,
         margin = ggplot2::margin(b = half_line),
-        family = base_family, colour = "#00539B"
+        family = base_family, colour = "#1D3E6D" # replaced #00539B
       ),
 
       # caption text
       plot.caption = ggplot2::element_text(
         hjust = 1, vjust = 1,
         margin = ggplot2::margin(t = half_line),
-        family = base_family, colour = "#00539B"
+        family = base_family, colour = "#1D3E6D" # replaced #00539B
       ),
 
       # axis title and text
       axis.title.x = ggplot2::element_text(
         margin = ggplot2::margin(t = half_line / 2),
         vjust = -0.5,
-        family = base_family, colour = "#00539B"
+        family = base_family, colour = "#1D3E6D" # replaced #00539B
       ),
       axis.title.y = ggplot2::element_text(
         margin = ggplot2::margin(r = half_line / 2),
         vjust = 1,
         angle = 90,
-        family = base_family, colour = "#00539B"
+        family = base_family, colour = "#1D3E6D" # replaced #00539B
       ),
       axis.text = ggplot2::element_text(
-        colour = "#012169"
+        colour = "#0C234B" # replaced #012169
       ),
       axis.text.x = ggplot2::element_text(
         margin = ggplot2::margin(t = 0.8 * half_line / 2),
@@ -123,31 +123,31 @@ theme_duke <- function(
       # legend title and text
       legend.text = ggplot2::element_text(
         family = base_family,
-        color = "#00539B"
+        color = "#1D3E6D" # replaced #00539B
       ),
       legend.title = ggplot2::element_text(
         family = base_family,
-        color = "#00539B"
+        color = "#1D3E6D" # replaced #00539B
       ),
 
       # background panel for facet plot titles
-      strip.background = ggplot2::element_rect(fill = "#E2E6ED", color = "#E2E6ED"),
+      strip.background = ggplot2::element_rect(fill = "#D5D9D9", color = "#D5D9D9"), # replaced #E2E6ED
 
       # text for facet plots
       strip.text = ggplot2::element_text(
         margin = ggplot2::margin(t = half_line / 2, b = half_line / 2),
         family = base_family,
-        colour = "#012169"
+        colour = "#0C234B" # replaced #012169
       ),
       strip.text.x = ggplot2::element_text(
         margin = ggplot2::margin(t = half_line / 2, b = half_line / 2),
         family = base_family,
-        colour = "#012169"
+        colour = "#0C234B" # replaced #012169
       ),
       strip.text.y = ggplot2::element_text(
         margin = ggplot2::margin(t = half_line / 2, b = half_line / 2),
         family = base_family,
-        colour = "#012169"
+        colour = "#0C234B" # replaced #012169
       ),
 
       complete = TRUE

@@ -1,8 +1,8 @@
 ---
-title: "theme_duke()"
+title: "theme_uarizona()"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{theme_duke()}
+  %\VignetteIndexEntry{theme_uarizona()}
   %\VignetteEncoding{UTF-8}
   %\VignetteEngine{knitr::rmarkdown}
 ---
@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-This vignette is intended to demonstrate the breadth of `theme_duke()` and its various applications. 
+This vignette is intended to demonstrate the breadth of `theme_uarizona()` and its various applications. 
 Similar to the other functions within the `theme()`, this function can be applied to all visualizations made with ggplot2. 
 
 # Plot Examples
@@ -26,7 +26,7 @@ For these visualizations, we will use the `penguins` dataset from the **palmerpe
 ```{r penguins, warning = FALSE}
 library(palmerpenguins)
 library(ggplot2)
-library(duke)
+library(uarizona)
 ```
 
 ## Scatter Plot
@@ -42,7 +42,7 @@ p <- ggplot(penguins, aes(bill_length_mm, flipper_length_mm)) +
   )
 
 p +
-  theme_duke()
+  theme_uarizona()
 ```
 
 
@@ -59,7 +59,7 @@ p <- ggplot(penguins, aes(species)) +
   )
 
 p +
-  theme_duke()
+  theme_uarizona()
 ```
 
 ## Histogram
@@ -75,7 +75,7 @@ p <- ggplot(penguins, aes(body_mass_g)) +
   )
 
 p +
-  theme_duke()
+  theme_uarizona()
 ```
 
 ## Box Plot
@@ -90,7 +90,7 @@ p <- ggplot(penguins, aes(sex, body_mass_g)) +
   )
 
 p +
-  theme_duke()
+  theme_uarizona()
 ```
 
 ## Density Plot
@@ -105,7 +105,7 @@ p <- ggplot(penguins, aes(bill_depth_mm)) +
   )
 
 p +
-  theme_duke()
+  theme_uarizona()
 ```
 
 
@@ -121,5 +121,5 @@ p <- ggplot(penguins, aes(year, body_mass_g)) +
   )
 
 p +
-  theme_duke()
+  theme_uarizona()
 ```
