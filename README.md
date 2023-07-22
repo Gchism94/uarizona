@@ -1,7 +1,7 @@
 
 # uarizona
 
-<a href="https://Gchism94.github.io/uarizona/"><img src="man/figures/logo.png" align="right" height="113" /></a>
+<a href="https://Gchism94.github.io/uarizona/"><img src="man/figures/logo.png" data-align="right" height="113" /></a>
 
 <!-- badges: start -->
 
@@ -13,7 +13,9 @@ alt="R-CMD-check" /></a>
 <a href="https://cran.r-project.org/package=uarizona"
 class="pkgdown-release"><img
 src="https://www.r-pkg.org/badges/version/uarizona"
-alt="CRAN Status" /></a> <!-- badges: end -->
+alt="CRAN Status" /></a>
+
+<!-- badges: end -->
 
 ## Overview
 
@@ -24,7 +26,14 @@ UArizona community and beyond.
 
 ## Installation
 
-You can install the development version from GitHub:
+You can install the official version of `uarizona` from CRAN with:
+
+``` r
+# Install uarizona directly:
+install.packages("uarizona")
+```
+
+Or alternatively, you can install the development version from GitHub:
 
 ``` r
 # install.packages("devtools")
