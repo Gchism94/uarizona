@@ -24,18 +24,11 @@ and beyond.
 
 ## Installation
 
-You can install the official version of `uarizona` from CRAN with:
-
-``` r
-# Install uarizona directly:
-install.packages("uarizona")
-```
-
-Or alternatively, you can install the development version from GitHub:
+You can install the development version from GitHub:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("aidangildea/uarizona")
+devtools::install_github("Gchism94/uarizona")
 ```
 
 ## Usage
