@@ -1,26 +1,26 @@
 
 # uarizona
 
-<a href="https://aidangildea.github.io/uarizona/"><img src="man/figures/logo.png" align="right" height="113" /></a>
+<a href="https://Gchism94.github.io/uarizona/"><img src="man/figures/logo.png" align="right" height="113" /></a>
 
 <!-- badges: start -->
 
 <a
-href="https://github.com/aidangildea/uarizona/actions/workflows/R-CMD-check.yaml"
+href="https://github.com/Gchism94/uarizona/actions/workflows/R-CMD-check.yaml"
 class="pkgdown-devel"><img
-src="https://github.com/aidangildea/uarizona/actions/workflows/R-CMD-check.yaml/badge.svg"
+src="https://github.com/Gchism94/uarizona/actions/workflows/R-CMD-check.yaml/badge.svg"
 alt="R-CMD-check" /></a>
 <a href="https://cran.r-project.org/package=uarizona"
 class="pkgdown-release"><img
-src="https://www.r-pkg.org/badges/version/uarizona" alt="CRAN Status" /></a>
-<!-- badges: end -->
+src="https://www.r-pkg.org/badges/version/uarizona"
+alt="CRAN Status" /></a> <!-- badges: end -->
 
 ## Overview
 
-**uarizona** allows users to generate visualizations with UArizona’s official
-suite of colors in a color blind friendly way. By using it alongside
-**ggplot2**, you can easily promote accessibility in the UArizona community
-and beyond.
+**uarizona** allows users to generate visualizations with UArizona’s
+official suite of colors in a color blind friendly way. By using it
+alongside **ggplot2**, you can easily promote accessibility in the
+UArizona community and beyond.
 
 ## Installation
 
@@ -39,8 +39,8 @@ scales of your plots created with ggplot2.
 
 ## Example
 
-By using **uarizona** functions, you can easily convert your visualizations
-to UArizona official colors.
+By using **uarizona** functions, you can easily convert your
+visualizations to UArizona official colors.
 
 ``` r
 library(ggplot2)

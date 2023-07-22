@@ -15,10 +15,10 @@ knitr::opts_chunk$set(
 
 # uarizona
 
-<a href="https://aidangildea.github.io/uarizona/"><img src="man/figures/logo.png" align="right" height="113" /></a>
+<a href="https://Gchism94.github.io/uarizona/"><img src="man/figures/logo.png" align="right" height="113" /></a>
 
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/aidangildea/uarizona/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/aidangildea/uarizona/actions/workflows/R-CMD-check.yaml){.pkgdown-devel}
+[![R-CMD-check](https://github.com/Gchism94/uarizona/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Gchism94/uarizona/actions/workflows/R-CMD-check.yaml){.pkgdown-devel}
 [![CRAN Status](https://www.r-pkg.org/badges/version/uarizona)](https://cran.r-project.org/package=uarizona){.pkgdown-release}
 <!-- badges: end -->
 
@@ -38,7 +38,7 @@ Or alternatively, you can install the development version from GitHub:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("aidangildea/uarizona")
+devtools::install_github("Gchism94/uarizona")
 ```
 
 ## Usage
