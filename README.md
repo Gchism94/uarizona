@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # uarizona
 
 <a href="https://Gchism94.github.io/uarizona/"><img src="man/figures/logo.png" data-align="right" height="113"/></a>
