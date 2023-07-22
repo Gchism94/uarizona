@@ -93,3 +93,7 @@ plot2 +
 
 For further questions about this package and its use, please open an
 issue.
+
+## Disclosure
+
+This "package" was developed on a whim for a course slide. I, at this time, do not anticipate publishing this package and maintainance will not be timely when issues occur. If you are interested in the inspiration for this package see [duke](https://github.com/aidangildea/duke).
