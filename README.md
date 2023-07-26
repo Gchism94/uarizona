@@ -17,7 +17,7 @@ class="pkgdown-release"><img src="https://www.r-pkg.org/badges/version/uarizona"
 **uarizona** allows users to generate visualizations with UArizona's
 official suite of colors in a color blind friendly way. By using it
 alongside **ggplot2**, you can easily promote accessibility in the
-UArizona community and beyond.
+UArizona community and beyond. This is an unofficial theme that is not endorsed by The University of Arizona. 
 
 ## Installation
 
